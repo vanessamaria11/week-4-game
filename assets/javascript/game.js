@@ -1,9 +1,9 @@
-var targetnumber;
+// var targetnumber;
 
-var img1number;
-var img2number;
-var img3number;
-var img4number;
+// var img1number;
+// var img2number;
+// var img3number;
+// var img4number;
 
 var score;
 
@@ -37,7 +37,7 @@ for (var i=0; i<4; i++){
 //creating crystal object at each index "i" 
 	crystals[i]={
 		// ":" says its a property
-		points:0
+		points:10
 	}
 	//calling the AssignValue function below.
 	AssignValue(crystals[i])
@@ -60,7 +60,7 @@ $(".pic").each(function(){
 			var crystalIndex = clickedPic.attr("data-crystal");
 			//testing to see if points work
 			console.log(crystals[crystalIndex]);
-
+			// do not use "var total" because that would create a local variable, "total" retrieves it from line 18
 			total=total+crystals[crystalIndex].points;
 			$("#addpoints").html(total);
 
@@ -109,6 +109,23 @@ function ResetGame(){
 }
 //AssignValue(crystal);
 //console.log(crystal);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
